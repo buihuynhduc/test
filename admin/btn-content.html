@@ -1,0 +1,27 @@
+
+                
+           <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-primary" style="font-size: small;width: 210px;" id="ddk">sinh viên đã đủ điều kiện thi</button>
+            <p style="color:#cccccc">.</p>
+            <button type="button" class="btn btn-primary"style="font-size: small;width: 210px;"id="kdk">sinh viên chưa đủ điều kiện thi</button>
+        </div>
+            <div id="body-content"   style="background-color:#cccccc;position: relative;top: 0px;">
+
+            </div>
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    $('#ddk').click(function(e) {
+                        e.preventDefault();
+                        $('#body-content').load('table-data.html');
+                    });
+                });
+                </script>
+                <script type="text/javascript">
+                    $(document).ready(function() {
+                        $('#kdk').click(function(e) {
+                            e.preventDefault();
+                            $('#body-content').load('table-test.html');
+                        });
+                    });
+                    </script>
+
